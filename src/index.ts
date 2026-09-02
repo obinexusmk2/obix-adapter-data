@@ -1,12 +1,12 @@
 /**
- * @obinexusltd/obix-adapter-data
+ * obix-adapter-data
  *
  * The Data projection: the identity over a DOP artifact. No hidden props, no
  * instance, no lifecycle. The caller threads `state`, `payload` and `props`
  * itself. All transitions route through obix-ir.applyAction — the same business
  * action every other adapter calls.
  */
-import { applyAction, replayTrace } from "@obinexusltd/obix-ir";
+import { applyAction, replayTrace } from "obix-ir";
 import type {
   DOPArtifact,
   State,
@@ -14,7 +14,7 @@ import type {
   Payload,
   ActionTrace,
   ValidationResult,
-} from "@obinexusltd/obix-spec";
+} from "obix-spec";
 
 /** Data projection === the artifact itself. */
 export function toData<S extends object = State, P extends object = Props>(

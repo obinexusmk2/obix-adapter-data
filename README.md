@@ -1,9 +1,9 @@
-# @obinexusltd/obix-adapter-data
+# obix-adapter-data
 
 **The Data projection — identity over the DOP artifact.**
 
 ```bash
-npm install @obinexusltd/obix-adapter-data
+npm install obix-adapter-data
 ```
 
 ## API
@@ -21,8 +21,8 @@ adapters use — `Action(state, payload, props)` is invoked identically.
 
 ## Dependency role
 
-`obix-spec` + `obix-ir`. Never depends on `obix-validator`, `obix-test`, the
-compiler, or the runtime. Consumed by `obix-test` and `obix-timer`.
+`obix-spec` + `obix-ir`. Never depends on `obix-validator`, `obix-equivalence`, the
+compiler, or the runtime. Consumed by `obix-equivalence` and `obix-timer`.
 
 ## Level 0 status
 

@@ -1,4 +1,4 @@
-import { applyAction, replayTrace } from "@obinexusltd/obix-ir";
+import { applyAction, replayTrace } from "obix-ir";
 export function toData(artifact) {
     return artifact;
 }

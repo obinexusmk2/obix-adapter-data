@@ -1,7 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { toData, dataApply, dataReplay, dataRender, dataValidate } from "../dist/index.js";
-import { TimerDOP } from "@obinexusltd/obix-timer";
+import { TimerDOP } from "obix-timer";
 
 test("toData is identity over the artifact", () => {
   assert.equal(toData(TimerDOP), TimerDOP);
